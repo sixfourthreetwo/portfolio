@@ -41,5 +41,11 @@ header {
 }
 
 .dribbble-icon {
-  width: 6%;
+  width: 80px;
+}
+
+@media screen and (max-width: 47.9375em) {
+  .dribbble-icon {
+    width: 40%;
+  }
 }
