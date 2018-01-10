@@ -1,6 +1,11 @@
 # Created by .ignore support plugin (hsz.mobi)
 .gitignore
 .idea/*
+.sass-cache
+.sass-cache/*
+
+
+.sass-cache/
+css/main.css.map
+scss/
 .DS_Store
-
-
