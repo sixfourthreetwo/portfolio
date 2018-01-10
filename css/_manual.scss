@@ -43,9 +43,10 @@ body {
 }
 
 .dribbble-icon {
-  width: 6%;
+  width: 80px;
 }
 
+<<<<<<< HEAD
 a {
   text-decoration: none;
   color: inherit;
@@ -97,3 +98,10 @@ a {
 .link-highlight.link-highlight-sopost:hover:before {
   background: #004cc9;
 }
+=======
+@media screen and (max-width: 47.9375em) {
+  .dribbble-icon {
+    width: 40%;
+  }
+}
+>>>>>>> master
