@@ -1,6 +1,20 @@
 /** colour **/
 html,
 body {
+<<<<<<< HEAD
+  width: 100%;
+  height: 100%;
+  font-family: 'Work Sans', sans-serif;
+  margin: 0; }
+
+.logo {
+  width: 18%; }
+
+.header-copy {
+  font-size: 1.4em;
+  font-weight: 400;
+  line-height: 1.8em; }
+=======
     width: 100%;
     height: 100%;
     font-family: 'Rubik', sans-serif;
@@ -14,6 +28,7 @@ header {
     background-color: #C96760;
     height: 400px;
 }
+>>>>>>> master
 
 .shape1 {
     margin-top: 100px;
@@ -23,9 +38,14 @@ header {
     margin-top: -100px;
 }
 
+<<<<<<< HEAD
+.buffer-lg {
+  padding: 200px 0; }
+=======
 .lg-space {
     margin: 200px 0;
 }
+>>>>>>> master
 
 /** FullScreen Slider **/
 .bg-gradient {
@@ -51,6 +71,51 @@ header {
     width: 3.6%;
     margin-left: 20px;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.4em;
+  cursor: pointer; }
+
+.link-highlight {
+  display: inline-block;
+  position: relative;
+  margin: 0 -4px -8px;
+  padding: 0 4px;
+  z-index: 10;
+  overflow: hidden;
+  transition: all 400ms; }
+
+.link-highlight:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.1);
+  top: 60%;
+  bottom: 1px;
+  left: 4px;
+  right: 4px;
+  transform: scale(1, 1);
+  transform-origin: center bottom;
+  transition: all 400ms;
+  pointer-events: none;
+  z-index: -1; }
+
+.link-highlight:hover {
+  color: white; }
+
+.link-highlight:hover:before {
+  background: black;
+  transform: scale(1.2, 2.8); }
+
+.link-highlight:focus {
+  outline-color: rgba(0, 0, 0, 0.1);
+  outline-width: 1px;
+  outline-offset: -3px; }
+
+.link-highlight.link-highlight-sopost:hover:before {
+  background: #004cc9; }
 
 .container {
     position: relative;
