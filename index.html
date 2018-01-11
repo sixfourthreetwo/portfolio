@@ -7,32 +7,81 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>sixtyfour thirtytwo</title>
 
-	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
 	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
 
 </head>
 <body>
 
 <header>
+	<div class="bar"></div>
 	<nav>
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-					<img class="logo" src="img/logo.svg">
+				<div class="col-9">
+					<img class="logo center" src="img/logo.svg">
 				</div>
-			</div>
-			<div class="row">
-				<div class="col-8">
-					<p class="header-copy buffer-lg">
-						I'm developing the next version of SixtyFour ThirtyTwo.
-						<!-- a creative & front-end developer with a love for iconography. currently working at <a href="http://sopost.com/" target="_blank" class="link-highlight link-highlight-sopost">SoPost</a> -->
-					</p>
-				</div>
+				<div class="col-1 center"><a href="http://sopost.com/" target="_blank"
+											 class="link-highlight link-highlight-sopost">Journal</a></div>
+				<div class="col-1 center"><a href="http://sopost.com/" target="_blank"
+											 class="link-highlight link-highlight-sopost">Contact</a></div>
+				<div class="col-1 center"><a href="http://sopost.com/" target="_blank"
+											 class="link-highlight link-highlight-sopost">Github</a></div>
 			</div>
 		</div>
 	</nav>
+	<div class="container">
+		<div class="row">
+			<div class="col-8 buffer-lg">
+				<p class="header-copy ">
+				<h1><a href="http://sopost.com/" class="link-highlight link-highlight-sopost">creative</a>
+				</h1>
+				<h1><a href="#code" class="link-highlight link-highlight-sopost">code</a>
+				</h1>
+				</p>
+			</div>
+		</div>
+	</div>
 </header>
+
+<section id="creative">
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div> HELLO 2</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<div> HELLO</div>
+			</div>
+		</div>
+	</div>
+</section>
+
 </body>
+
+<script>
+    $('a[href*=#]:not([href=#])').click(function () {
+        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+            || location.hostname == this.hostname) {
+
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('#code').animate({
+                    scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        }
+    });
+</script>
 
 </html>
