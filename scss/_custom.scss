@@ -1,0 +1,176 @@
+$blue: #004cc9;
+$blue2: #00184F;
+$red: #C85177;
+$black: #1d1d1d;
+$white: #FFFFFF;
+$grey: #AAAAAA;
+$border: #CFCFCF;
+$tag: #D1DFED;
+$yellow: #DB9B51;
+$green: #B7DACF;
+
+h1 {
+  font-size: 6.0em;
+  font-weight: 800;
+}
+
+nav {
+  .link-highlight {
+	margin-top: 26px;
+  }
+}
+
+.bar {
+  background: rgba(183, 218, 207, 0.25);
+  height: 10px;
+}
+
+.logo {
+  width: 20%;
+}
+
+.header-copy {
+  font-size: 1.4em;
+  font-weight: 600;
+  line-height: 1.8em;
+}
+
+.shape1 {
+  margin-top: 100px;
+}
+
+.shape2 {
+  margin-top: -100px;
+}
+
+.buffer-sm {
+  padding: 100px 0;
+}
+
+.buffer-lg {
+  padding: 200px 0;
+}
+
+.portfolio-item {
+  background-color: $green;
+  width: 100%;
+  height: 320px;
+  margin: 20px 0;
+}
+
+.push-md {
+  margin-top: 180px;
+}
+
+.push-lg {
+  margin-top: 320px;
+}
+
+/** FullScreen Slider **/
+
+.bg-gradient {
+  background: #00C9FF; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #92FE9D, #00C9FF); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.slider-paragraph {
+  position: absolute;
+  top: 10%;
+  left: 10%;
+}
+
+.dribbble-icon {
+  width: 80px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1.4em;
+  cursor: pointer;
+}
+
+.link-highlight {
+  display: inline-block;
+  position: relative;
+  margin: 0 -4px -8px;
+  padding: 0 4px;
+  z-index: 10;
+  overflow: hidden;
+  transition: all 400ms;
+}
+
+.link-highlight:before {
+  content: "";
+  display: block;
+  position: absolute;
+  background: rgba(183, 218, 207, 0.25);
+  top: 60%;
+  bottom: 1px;
+  left: 1px;
+  right: 1px;
+  transform: scale(1, 1);
+  transform-origin: center bottom;
+  transition: all 400ms;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.link-highlight:hover {
+  color: white;
+}
+
+.link-highlight:hover:before {
+  background: black;
+  transform: scale(1.2, 2.4);
+}
+
+.link-highlight:focus {
+  outline-color: rgba(0, 0, 0, 0.1);
+  outline-width: 1px;
+  outline-offset: -3px;
+}
+
+.link-highlight.link-highlight-sopost:hover:before {
+  background: #B7DACF;
+
+}
+
+@media screen and (max-width: 47.9375em) {
+  .dribbble-icon {
+	width: 40%;
+  }
+}
+
+.svg-icon {
+  width: 2.2em;
+  height: 2.2em;
+   -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.svg-icon:hover {
+   transform: translateY(-2px);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.svg-icon:active {
+   transform: translateY(1px);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: $green;
+}
+
+.svg-icon circle {
+  stroke: $green;
+  stroke-width: 1;
+}
+
+
