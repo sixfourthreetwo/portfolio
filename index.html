@@ -9,7 +9,10 @@
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" type="text/css">
 	<link rel="stylesheet" href="css/main.css" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Work+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,700,800" rel="stylesheet">
+
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 </head>
 <body>
@@ -17,29 +20,16 @@
 <header>
 	<div class="bar"></div>
 	<nav>
-		<div class="container">
+		<div class="container" data-aos="fade">
 			<div class="row">
-				<div class="col-12 push-md">
+				<div class="col-8 sm-text-center">
 					<img class="logo" src="img/logo.svg" alt="SixtyFour ThirtyTwo Logo">
 				</div>
 			</div>
-
-	</nav>
-	<!--<nav>
-		<div class="container">
-			<div class="row">
-				<div class="col-6">
-
-				</div>
-				<div class="col-2 center"><a href="http://sopost.com/" target="_blank"
-											 class="link-highlight link-highlight-sopost">journal</a></div>
-				<div class="col-2 center"><a href="http://sopost.com/" target="_blank"
-											 class="link-highlight link-highlight-sopost">projects</a></div>
-				<div class="col-2 center"><a href="http://sopost.com/" target="_blank"
-											 class="link-highlight link-highlight-sopost">contact</a></div>
-			</div>
 		</div>
-	</nav> -->
+	</nav>
+
+	<!--
 </header>
 <div class="container">
 	<div class="row">
@@ -70,67 +60,37 @@
 		</div>
 	</div>
 </div>
-<!--
-<div class="container">
-	<div class="row">
-		<div class="col-8 buffer-lg">
-			<p class="header-copy ">
-			<h1><a href="http://sopost.com/" class="link-highlight link-highlight-sopost">creative</a>
-			</h1>
-			<h1><a href="#code" class="link-highlight link-highlight-sopost">code</a>
-			</h1>
-			</p>
-		</div>
-	</div>
-</div>
 </header>
+-->
 
-<section id="creative">
-<div class="container">
-	<div class="row">
-		<div class="col-12">
-			<div> HELLO 2</div>
-		</div>
-	</div>
-</div>
-</section>
-
-<section>
-<div class="container">
-	<div class="row">
-		<div class="col-12">
-			<div> HELLO</div>
-		</div>
-	</div>
-</div>
-</section> -->
-
-<!--
-<section>
+<section class="push-md">
 	<div class="container">
 		<div class="row">
-			<div class="col-2">
-				<img class="logo" src="img/logo.svg">
+			<div class="col-6" data-aos="fade">
+				<div class="portfolio-item">
+					<p class="portfolio-item-title">the granary</p>
+					<div class="portfolio-card granary-image"></div>
+					<p class="project-type text-right">branding/dev<p>
+				</div>
 			</div>
-			<div class="col-5">
-				<div class="portfolio-item push-lg"></div>
-				<div class="portfolio-item"></div>
-
-
-			</div>
-			<div class="col-5">
-				<div class="portfolio-item push-md"></div>
-				<div class="portfolio-item"></div>
+			<div class="col-6 push-md" data-aos="fade">
+				<div class="portfolio-item">
+					<p class="portfolio-item-title">cast</p>
+					<div class="portfolio-card cast-image"></div>
+					<p class="project-type text-right">iconography</p>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
 
--->
 
 </body>
 
 <script>
+    AOS.init({
+        duration: 600,
+        easing: 'ease-in-sine',
+    });
 </script>
-
 </html>
