@@ -2,7 +2,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Encode Sans', sans-serif;
   margin: 0; }
 
 .container {
@@ -692,35 +692,30 @@ body {
 .black {
   color: #1d1d1d; }
 
+.green {
+  color: #B7DACF; }
+
 h4 {
   font-size: 1.125em;
   line-height: 1.375em;
   letter-spacing: 1.1px; }
 
 h1 {
-  font-size: 6.0em;
-  font-weight: 800; }
-
-nav .link-highlight {
-  margin-top: 26px; }
+  font-size: 2.3em;
+  font-weight: 800;
+  line-height: 1.4em; }
 
 .bar {
   background: rgba(183, 218, 207, 0.25);
   height: 10px; }
 
 .logo {
-  width: 20%; }
+  width: 28%; }
 
 .header-copy {
   font-size: 1.4em;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.8em; }
-
-.shape1 {
-  margin-top: 100px; }
-
-.shape2 {
-  margin-top: -100px; }
 
 .buffer-sm {
   padding: 100px 0; }
@@ -748,7 +743,7 @@ nav .link-highlight {
 .portfolio-item-title {
   position: absolute;
   z-index: 2;
-  margin-top: 280px;
+  margin-top: 240px;
   font-weight: 800;
   color: #B7DACF;
   font-size: 3em; }
@@ -781,9 +776,7 @@ nav .link-highlight {
 .push-lg {
   margin-top: 320px; }
 
-.dribbble-icon {
-  width: 80px; }
-
+/** Links **/
 a {
   text-decoration: none;
   color: inherit;
@@ -803,36 +796,43 @@ a {
   content: "";
   display: block;
   position: absolute;
-  background: rgba(183, 218, 207, 0.25);
-  top: 60%;
+  background: #B7DACF;
+  top: 80%;
   bottom: 1px;
-  left: 1px;
-  right: 1px;
+  left: 4px;
+  right: 4px;
   transform: scale(1, 1);
   transform-origin: center bottom;
   transition: all 400ms;
   pointer-events: none;
   z-index: -1; }
 
-.link-highlight:hover {
-  color: white; }
-
 .link-highlight:hover:before {
   background: black;
-  transform: scale(1.2, 2.4); }
+  transform: scale(1.2, 2.8); }
 
 .link-highlight:focus {
   outline-color: rgba(0, 0, 0, 0.1);
   outline-width: 1px;
   outline-offset: -3px; }
 
-.link-highlight.link-highlight-green:hover:before {
-  background: #B7DACF; }
+.link-highlight.link-highlight-dribble:hover:before {
+  background: #ea4c89;
+  transition: all 400ms; }
+
+.link-highlight.link-highlight-github:hover:before {
+  background: #4078c0;
+  transition: all 400ms; }
+
+.link-highlight.link-highlight-twitter:hover:before {
+  background: #1da1f2;
+  transition: all 400ms; }
+
+.link-highlight.link-highlight-instagram:hover:before {
+  background: #f56040;
+  transition: all 400ms; }
 
 @media screen and (max-width: 47.9375em) {
-  .dribbble-icon {
-    width: 40%; }
-
   .portfolio-card {
     height: 220px; }
 
@@ -868,5 +868,20 @@ a {
 .svg-icon circle {
   stroke: #B7DACF;
   stroke-width: 1; }
+
+.copy {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.6em; }
+
+.number {
+  font-size: 2.0em;
+  font-weight: 800;
+  color: #B7DACF; }
+
+.descriptor {
+  font-size: 1.0em;
+  font-weight: 600;
+  margin-top: -10px; }
 
 /*# sourceMappingURL=main.css.map */

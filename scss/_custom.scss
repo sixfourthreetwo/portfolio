@@ -10,14 +10,9 @@ $yellow: #DB9B51;
 $green: #B7DACF;
 
 h1 {
-  font-size: 6.0em;
+  font-size: 2.3em;
   font-weight: 800;
-}
-
-nav {
-  .link-highlight {
-	margin-top: 26px;
-  }
+  line-height: 1.4em;
 }
 
 .bar {
@@ -26,21 +21,13 @@ nav {
 }
 
 .logo {
-  width: 20%;
+  width: 28%;
 }
 
 .header-copy {
   font-size: 1.4em;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.8em;
-}
-
-.shape1 {
-  margin-top: 100px;
-}
-
-.shape2 {
-  margin-top: -100px;
 }
 
 .buffer-sm {
@@ -73,7 +60,7 @@ nav {
 .portfolio-item-title {
   position: absolute;
   z-index: 2;
-  margin-top: 280px;
+  margin-top: 240px;
   font-weight: 800;
   color: $green;
   font-size: 3em;
@@ -113,9 +100,7 @@ nav {
   margin-top: 320px;
 }
 
-.dribbble-icon {
-  width: 80px;
-}
+/** Links **/
 
 a {
   text-decoration: none;
@@ -138,11 +123,11 @@ a {
   content: "";
   display: block;
   position: absolute;
-  background: rgba(183, 218, 207, 0.25);
-  top: 60%;
+  background: $green;
+  top: 80%;
   bottom: 1px;
-  left: 1px;
-  right: 1px;
+  left: 4px;
+  right: 4px;
   transform: scale(1, 1);
   transform-origin: center bottom;
   transition: all 400ms;
@@ -150,13 +135,9 @@ a {
   z-index: -1;
 }
 
-.link-highlight:hover {
-  color: white;
-}
-
 .link-highlight:hover:before {
   background: black;
-  transform: scale(1.2, 2.4);
+  transform: scale(1.2, 2.8);
 }
 
 .link-highlight:focus {
@@ -165,15 +146,27 @@ a {
   outline-offset: -3px;
 }
 
-.link-highlight.link-highlight-green:hover:before {
-  background: #B7DACF;
+.link-highlight.link-highlight-dribble:hover:before {
+  background: #ea4c89;
+  transition: all 400ms;
+}
 
+.link-highlight.link-highlight-github:hover:before {
+  background: #4078c0;
+  transition: all 400ms;
+}
+
+.link-highlight.link-highlight-twitter:hover:before {
+  background: #1da1f2;
+  transition: all 400ms;
+}
+
+.link-highlight.link-highlight-instagram:hover:before {
+  background: #f56040;
+  transition: all 400ms;
 }
 
 @media screen and (max-width: 47.9375em) {
-  .dribbble-icon {
-	width: 40%;
-  }
   .portfolio-card {
 	height: 220px;
   }
@@ -218,4 +211,20 @@ a {
   stroke-width: 1;
 }
 
+.copy {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.6em;
+}
 
+.number {
+  font-size: 2.0em;
+  font-weight: 800;
+  color: $green;
+}
+
+.descriptor {
+  font-size: 1.0em;
+  font-weight: 600;
+  margin-top: -10px;
+}
