@@ -80,6 +80,10 @@ h1 {
   transition: .3s ease-in;
 }
 
+.portfolio-card:active {
+  transform: translateY(6px);
+}
+
 .granary-image {
   background-image: url("../img/granary.png");
   background-position: center;
