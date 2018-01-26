@@ -766,12 +766,19 @@ h1 {
 .granary-image {
   background-image: url("../img/granary.png");
   background-position: center;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.granary-image:hover {
+  background-image: url("../img/granary_hover.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .cast-image {
-  background-image: url("../img/cast.png");
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-image: url("https://cdn.dribbble.com/users/31492/screenshots/2603134/novoicons.png");
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .push-md {
   margin-top: 180px; }
@@ -886,5 +893,8 @@ a {
   font-size: 1.0em;
   font-weight: 600;
   margin-top: -10px; }
+
+ul {
+  display: flex; }
 
 /*# sourceMappingURL=main.css.map */
