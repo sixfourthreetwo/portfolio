@@ -85,23 +85,72 @@ h1 {
 }
 
 .granary-image {
-  background-image: url("../img/granary.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.granary-image:hover {
   background-image: url("../img/granary_hover.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.granary-image:hover {
+  background-image: url("../img/granary.png");
+}
+
 .cast-image {
-  background-image: url("https://cdn.dribbble.com/users/31492/screenshots/2603134/novoicons.png");
+  background-image: url("../img/cast.png");
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.cast-image:hover {
+  background-image: url("../img/cast_hover.png");
+}
+
+.hexacon-image {
+  background-image: url("../img/hexacon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.hexacon-image:hover {
+  background-image: url("../img/hexacon_hover.png");
+}
+
+.other-image {
+  background-image: url("../img/other.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.other-image:hover {
+  background-image: url("../img/other_hover.png");
+}
+
+.buffer-android {
+  padding: 20px 0;
+}
+
+.screens {
+  height: auto;
+  background-color: $green;
+}
+
+.murum-bg {
+  height: auto;
+  background-color: $green;
+  background-image: url("../img/android/murum.png");
+  background-position: center;
+
+}
+
+.android-screenshot {
+  max-width: 80%;
+}
+
+.android-icons {
+  width: 90%;
 }
 
 .push-md {
@@ -178,18 +227,23 @@ a {
   transition: all 400ms;
 }
 
+.link-highlight.link-highlight-home:hover:before {
+  background: $green;
+  transition: all 400ms;
+}
+
 @media screen and (max-width: 47.9375em) {
   .portfolio-card {
-	height: 220px;
+    height: 220px;
   }
   .portfolio-item-title {
-	margin-top: 140px;
+    margin-top: 140px;
   }
   .push-md {
-	margin-top: 0;
+    margin-top: 0;
   }
   .logo {
-	width: 40%;
+    width: 40%;
   }
 }
 
@@ -241,7 +295,7 @@ a {
   margin-top: -10px;
 }
 
-
 ul {
   display: flex;
 }
+
