@@ -803,6 +803,15 @@ h3 {
 .other-image:hover {
   background-image: url("../img/other_hover.png"); }
 
+.zero-image {
+  background-image: url("../img/zero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.zero-image:hover {
+  background-image: url("../img/zero_hover.png"); }
+
 .buffer-android {
   padding: 20px 0; }
 
