@@ -15,6 +15,12 @@ h1 {
   line-height: 1.4em;
 }
 
+h3 {
+   font-size: 1.8em;
+  font-weight: 800;
+  line-height: 1.4em;
+}
+
 .bar {
   background: rgba(183, 218, 207, 0.25);
   height: 10px;
@@ -45,7 +51,6 @@ h1 {
 
 .portfolio-card {
   background: white;
-  box-shadow: 0 12px 30px 0 rgba(174, 219, 206, 0.16);
   border-radius: 8px;
   width: 90%;
   height: 320px;
@@ -70,12 +75,12 @@ h1 {
   font-weight: 800;
   color: $green;
   opacity: 0.4;
+  margin-top: -30px;
 }
 
 .portfolio-card:hover {
   color: $green;
-  box-shadow: 0 12px 30px 0 rgba(174, 219, 206, 0.28);
-  transform: translateY(-8px);
+  transform: translateY(-4px);
   -webkit-transition: .3s;
   transition: .3s ease-in;
 }
@@ -138,7 +143,7 @@ h1 {
 }
 
 .murum-bg {
-  height: auto;
+  height: 700px;
   background-color: $green;
   background-image: url("../img/android/murum.png");
   background-position: center;
@@ -204,7 +209,7 @@ a {
 .link-highlight:focus {
   outline-color: rgba(0, 0, 0, 0.1);
   outline-width: 1px;
-  outline-offset: -3px;
+  outline-offset: -1px;
 }
 
 .link-highlight.link-highlight-dribble:hover:before {
@@ -226,6 +231,12 @@ a {
   background: #f56040;
   transition: all 400ms;
 }
+
+.link-highlight.link-highlight-android:hover:before {
+  background: #a4c639;
+  transition: all 400ms;
+}
+
 
 .link-highlight.link-highlight-home:hover:before {
   background: $green;
