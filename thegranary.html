@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>the granary - sixtyfour thirtytwo</title>
+
+	<link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+	<link rel="manifest" href="./favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/main.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+	<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+<header id="header"></header>
+
+<!-- Android -->
+
+<section class="">
+	<div class="container">
+		<div class="row">
+			<div class="col-8">
+				<h1 class="android-title green text-left">the granary</h1>
+				<p class="copy">
+					The Granary, is a a platform for sharing recipes and tips for bakers but aimed at people who have a
+					small space to cook or those on a budget by creating kitchen-casts.
+					<br><br>
+					The idea is to allow viewers to view the recipe before the live show, so they can collect the fresh
+					ingredients needed. Different recipes will have different budgets, but to counter this they come
+					with alternatives which could be used.
+					<br><br>
+					The Granary wants viewers to be able to eat well, on a budget, wherever they live.
+				</p>
+			</div>
+			<div class="col-4"></div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+				<img class="granary-mockup" src="img/granary_mockup.png" alt="The Granary website mockup">
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer id="footer"></footer>
+
+</body>
+
+<script>
+    AOS.init({
+        duration: 600,
+        easing: 'ease-in-sine',
+    });
+</script>
+
+<script>
+    $(function () {
+        $('#header').load('./modules/header.html')
+    });
+    $(function () {
+        $('#footer').load('./modules/footer.html')
+    });
+</script>
+</html>

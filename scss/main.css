@@ -702,7 +702,7 @@ h4 {
 
 h1 {
   font-size: 2.3em;
-  font-weight: 800;
+  font-weight: 700;
   line-height: 1.4em; }
 
 h3 {
@@ -946,5 +946,10 @@ a {
 
 ul {
   display: flex; }
+
+.granary-mockup {
+  width: 100%;
+  border: 4px solid #F1F1F1;
+  box-shadow: 0 6px 22px 0 rgba(0, 0, 0, 0.08); }
 
 /*# sourceMappingURL=main.css.map */
