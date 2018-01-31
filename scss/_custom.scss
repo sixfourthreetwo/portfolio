@@ -1,5 +1,5 @@
 $blue: #004cc9;
-$blue2: #00184F;
+$blue2: #02202D;
 $red: #C85177;
 $black: #1d1d1d;
 $white: #FFFFFF;
@@ -7,7 +7,7 @@ $grey: #AAAAAA;
 $border: #CFCFCF;
 $tag: #D1DFED;
 $yellow: #DB9B51;
-$green: #B7DACF;
+$green: #7FE596;
 
 @mixin background-img {
   background-position: center;
@@ -15,10 +15,29 @@ $green: #B7DACF;
   background-size: cover;
 }
 
-h1 {
-  font-size: 2.3em;
+.header-bg {
+  background-color: $blue2;
+  padding: 10px;
+}
+
+.header-border {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/border.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.header-border-bg {
+  background-image: linear-gradient(-180deg, #02212E 3%, #FFFFFF 3%, #FFFFFF 3%, #FFFFFF 11%, #FFFFFF 79%);
+
+}
+
+.header-title {
+  font-size: 2.4em;
   font-weight: 700;
   line-height: 1.4em;
+  color: $green;
 }
 
 h3 {
@@ -73,14 +92,15 @@ h3 {
   z-index: 2;
   margin-top: 240px;
   font-weight: 800;
-  color: $green;
+  color: $blue2;
   font-size: 3em;
 }
 
 .project-type {
+  position: absolute;
+  z-index: 2;
   font-weight: 800;
-  color: $green;
-  opacity: 0.4;
+  color: $blue2;
   margin-top: -30px;
 }
 
@@ -147,12 +167,12 @@ h3 {
 
 .screens {
   height: auto;
-  background-color: $green;
+  background-color: $blue2;
 }
 
 .murum-bg {
   height: 700px;
-  background-color: $green;
+  background-color: $blue2;
   background-image: url("../img/android/murum.png");
   background-position: center;
 
@@ -251,6 +271,9 @@ a {
 }
 
 @media screen and (max-width: 47.9375em) {
+  .header-bg{
+    padding: 10px;
+  }
   .portfolio-card {
     height: 220px;
   }
@@ -287,11 +310,11 @@ a {
 .svg-icon path,
 .svg-icon polygon,
 .svg-icon rect {
-  fill: $green;
+  fill: $blue2;
 }
 
 .svg-icon circle {
-  stroke: $green;
+  stroke: $blue2;
   stroke-width: 1;
 }
 
