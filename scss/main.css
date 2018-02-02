@@ -933,10 +933,11 @@ a {
   .logo {
     width: 40%; } }
 .svg-icon {
-  width: 2.2em;
-  height: 2.2em;
+  width: 2em;
+  height: 2em;
   -webkit-transition: .3s;
-  transition: .3s; }
+  transition: .3s;
+  margin-right: 12px; }
 
 .svg-icon:hover {
   transform: translateY(-2px);
@@ -947,15 +948,6 @@ a {
   transform: translateY(1px);
   -webkit-transition: .3s;
   transition: .3s; }
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: #02202D; }
-
-.svg-icon circle {
-  stroke: #02202D;
-  stroke-width: 1; }
 
 .copy {
   font-size: 1.2em;

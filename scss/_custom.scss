@@ -289,10 +289,11 @@ a {
 }
 
 .svg-icon {
-  width: 2.2em;
-  height: 2.2em;
+  width: 2em;
+  height: 2em;
   -webkit-transition: .3s;
   transition: .3s;
+  margin-right: 12px;
 }
 
 .svg-icon:hover {
@@ -305,17 +306,6 @@ a {
   transform: translateY(1px);
   -webkit-transition: .3s;
   transition: .3s;
-}
-
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: $blue2;
-}
-
-.svg-icon circle {
-  stroke: $blue2;
-  stroke-width: 1;
 }
 
 .copy {
