@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>the granary - sixtyfour thirtytwo</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png">
+    <link rel="manifest" href="./favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800" rel="stylesheet">
+
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+</head>
+<body>
+
+<header id="header"></header>
+
+<!-- Android -->
+
+<section class="">
+    <div class="container">
+        <div class="row">
+            <div class="col-8">
+                <h1 class="android-title blue2 text-left">The Granary</h1>
+                <p class="copy">
+                    The Granary, is a a platform for sharing recipes and tips for bakers but aimed at people who have a
+                    small space to cook or those on a budget by creating kitchen-casts.
+                    <br><br>
+                    The idea is to allow viewers to view the recipe before the live show, so they can collect the fresh
+                    ingredients needed. Different recipes will have different budgets, but to counter this they come
+                    with alternatives which could be used.
+                    <br><br>
+                    The Granary wants viewers to be able to eat well, on a budget, wherever they live.
+                </p>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</section>
+
+<section class="logo-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 center ">
+                <img class="thegranarylogo buffer-sm" src="img/thegranary_logo.svg" alt="The Granary Logo">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="buffer-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <div class="card thegranary-yellow center">
+                    <p class="white">#FFBB05</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card thegranary-white center">
+                    <p class="">#F8F8F8</p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="card thegranary-black center">
+                    <p class="white">#222427</p>
+                </div>
+            </div>
+            <div class="col-2"></div>
+            <div class="col-4">
+                <h1>Colour</h1>
+                <p>The base colour, Orange-Gold (#FFBB05) was inspired by that classic wheat-field colour, with a
+                    complimentary off-white and off-black. </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="buffer-sm">
+    <div class="container">
+        <div class="row">
+            <div class="col-5 push-md">
+                <h1>Web</h1>
+                <p>I've pieced together a live prototype of The Granary's home page. <br><br>The main goal of The Granary
+                    is to get consumers watching the live Kitchen-casts so one of the first elements a viewer sees is
+                    the 'Upcoming Schedule', consumers are able to click into an upcoming cast and gather more
+                    information such as the needed ingredients. <br><br>Consumers are then able to learn the process The
+                    Granary. <br><br> Finally consumers are able to see some of the latest casts and catch up on demand.
+                </p>
+            </div>
+            <div class="col-1"></div>
+            <div class="col-6 center">
+                <a href="https://sixfourthreetwo.github.io/thegranary/"
+                   class="link-highlight link-highlight-github">View the homepage prototype</a>
+                <br><br>
+                <img class="granary-mockup" src="img/thegranary_website.png" alt="The Granary Website">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer id="footer"></footer>
+
+</body>
+
+<script>
+    AOS.init({
+        duration: 600,
+        easing: 'ease-in-sine',
+    });
+</script>
+
+<script>
+    $(function () {
+        $('#header').load('./modules/header.html')
+    });
+    $(function () {
+        $('#footer').load('./modules/footer.html')
+    });
+</script>
+</html>

@@ -1,5 +1,5 @@
 $blue: #004cc9;
-$blue2: #00184F;
+$blue2: #02202D;
 $red: #C85177;
 $black: #1d1d1d;
 $white: #FFFFFF;
@@ -7,17 +7,33 @@ $grey: #AAAAAA;
 $border: #CFCFCF;
 $tag: #D1DFED;
 $yellow: #DB9B51;
-$green: #B7DACF;
+$green: #7FE596;
 
-h1 {
-  font-size: 6.0em;
-  font-weight: 800;
+@mixin background-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-nav {
-  .link-highlight {
-	margin-top: 26px;
-  }
+p {
+  line-height: 24px;
+}
+
+.header-bg {
+  margin: 0 8px;
+}
+
+.header-title {
+  font-size: 2.4em;
+  font-weight: 700;
+  line-height: 1.4em;
+  color: $blue2;
+}
+
+h3 {
+  font-size: 1.8em;
+  font-weight: 800;
+  line-height: 1.4em;
 }
 
 .bar {
@@ -26,21 +42,13 @@ nav {
 }
 
 .logo {
-  width: 20%;
+  width: 28%;
 }
 
 .header-copy {
   font-size: 1.4em;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 1.8em;
-}
-
-.shape1 {
-  margin-top: 100px;
-}
-
-.shape2 {
-  margin-top: -100px;
 }
 
 .buffer-sm {
@@ -52,10 +60,121 @@ nav {
 }
 
 .portfolio-item {
-  background-color: $green;
   width: 100%;
   height: 320px;
-  margin: 20px 0;
+}
+
+.portfolio-card {
+  background: white;
+  border-radius: 8px;
+  width: 90%;
+  height: 320px;
+  cursor: pointer;
+  color: #EFF6F3;
+  margin-left: auto;
+  margin-right: 0;
+  -webkit-transition: .3s;
+  transition: .3s ease-out;
+}
+
+.portfolio-item-title {
+  position: absolute;
+  z-index: 2;
+  margin-top: 240px;
+  font-weight: 800;
+  color: $blue2;
+  font-size: 3em;
+}
+
+.project-type {
+  position: absolute;
+  z-index: 2;
+  font-weight: 800;
+  color: $blue2;
+  margin-top: -42px;
+  opacity: 0.5;
+}
+
+.portfolio-card:hover {
+  transform: translateY(-4px);
+  -webkit-transition: .3s;
+  transition: .3s ease-in;
+  box-shadow: 0 9px 13px 0 rgba(0, 0, 0, 0.04);
+}
+
+.portfolio-card:active {
+  transform: translateY(6px);
+}
+
+.granary-image {
+  background-image: url("../img/granary_hover.png");
+  @include background-img;
+
+}
+
+.granary-image:hover {
+  background-image: url("../img/granary.png");
+}
+
+.cast-image {
+  background-image: url("../img/cast.png");
+  @include background-img;
+}
+
+.cast-image:hover {
+  background-image: url("../img/cast_hover.png");
+}
+
+.hexacon-image {
+  background-image: url("../img/hexacon.png");
+  @include background-img;
+}
+
+.hexacon-image:hover {
+  background-image: url("../img/hexacon_hover.png");
+}
+
+.other-image {
+  background-image: url("../img/other.png");
+  @include background-img;
+}
+
+.other-image:hover {
+  background-image: url("../img/other_hover.png");
+}
+
+.zero-image {
+  background-image: url("../img/zero.png");
+  @include background-img;
+}
+
+.zero-image:hover {
+  background-image: url("../img/zero_hover.png");
+}
+
+.buffer-android {
+  padding: 20px 0;
+}
+
+.screens {
+  height: auto;
+  background-color: $blue2;
+}
+
+.murum-bg {
+  height: 700px;
+  background-color: $blue2;
+  background-image: url("../img/android/murum.png");
+  background-position: center;
+
+}
+
+.android-screenshot {
+  max-width: 80%;
+}
+
+.android-icons {
+  width: 90%;
 }
 
 .push-md {
@@ -66,23 +185,7 @@ nav {
   margin-top: 320px;
 }
 
-/** FullScreen Slider **/
-
-.bg-gradient {
-  background: #00C9FF; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #92FE9D, #00C9FF); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to left, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.slider-paragraph {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-}
-
-.dribbble-icon {
-  width: 80px;
-}
+/** Links **/
 
 a {
   text-decoration: none;
@@ -105,11 +208,11 @@ a {
   content: "";
   display: block;
   position: absolute;
-  background: rgba(183, 218, 207, 0.25);
-  top: 60%;
+  background: $green;
+  top: 80%;
   bottom: 1px;
-  left: 1px;
-  right: 1px;
+  left: 4px;
+  right: 4px;
   transform: scale(1, 1);
   transform-origin: center bottom;
   transition: all 400ms;
@@ -117,60 +220,162 @@ a {
   z-index: -1;
 }
 
-.link-highlight:hover {
-  color: white;
-}
-
 .link-highlight:hover:before {
   background: black;
-  transform: scale(1.2, 2.4);
+  transform: scale(1.2, 2.8);
 }
 
 .link-highlight:focus {
   outline-color: rgba(0, 0, 0, 0.1);
   outline-width: 1px;
-  outline-offset: -3px;
+  outline-offset: -1px;
 }
 
-.link-highlight.link-highlight-sopost:hover:before {
-  background: #B7DACF;
+.link-highlight.link-highlight-dribble:hover:before {
+  background: #ea4c89;
+  transition: all 400ms;
+}
 
+.link-highlight.link-highlight-github:hover:before {
+  background: #4078c0;
+  transition: all 400ms;
+}
+
+.link-highlight.link-highlight-twitter:hover:before {
+  background: #1da1f2;
+  transition: all 400ms;
+}
+
+.link-highlight.link-highlight-instagram:hover:before {
+  background: #f56040;
+  transition: all 400ms;
+}
+
+.link-highlight.link-highlight-android:hover:before {
+  background: #a4c639;
+  transition: all 400ms;
+}
+
+.link-highlight.link-highlight-home:hover:before {
+  background: $green;
+  transition: all 400ms;
 }
 
 @media screen and (max-width: 47.9375em) {
-  .dribbble-icon {
-	width: 40%;
+  .header-bg {
+    padding: 10px;
+  }
+  .portfolio-card {
+    height: 220px;
+  }
+  .portfolio-item-title {
+    margin-top: 140px;
+  }
+  .push-md {
+    margin-top: 0;
+  }
+  .logo {
+    width: 40%;
   }
 }
 
 .svg-icon {
-  width: 2.2em;
-  height: 2.2em;
-   -webkit-transition: .3s;
+  width: 2em;
+  height: 2em;
+  -webkit-transition: .3s;
   transition: .3s;
+  margin-right: 12px;
 }
 
 .svg-icon:hover {
-   transform: translateY(-2px);
+  transform: translateY(-2px);
   -webkit-transition: .3s;
   transition: .3s;
 }
 
 .svg-icon:active {
-   transform: translateY(1px);
+  transform: translateY(1px);
   -webkit-transition: .3s;
   transition: .3s;
 }
 
-.svg-icon path,
-.svg-icon polygon,
-.svg-icon rect {
-  fill: $green;
+.copy {
+  font-size: 1.2em;
+  font-weight: 500;
+  line-height: 1.6em;
 }
 
-.svg-icon circle {
-  stroke: $green;
-  stroke-width: 1;
+.number {
+  font-size: 2.0em;
+  font-weight: 800;
+  color: $green;
 }
 
+.descriptor {
+  font-size: 1.0em;
+  font-weight: 600;
+  margin-top: -10px;
+}
 
+ul {
+  display: flex;
+}
+
+.granary-mockup {
+  width: 100%;
+  border: 4px solid #F1F1F1;
+  box-shadow: 0 6px 22px 0 rgba(0, 0, 0, 0.08);
+}
+
+.card {
+  padding: 12px 6px;
+  height: 220px;
+  -webkit-transition: .3s;
+  transition: .5s ease-in-out;
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.07);
+}
+
+/** The Granary **/
+
+.logo-section {
+  background-color: #222427;
+  width: 100%;
+  height: auto;
+}
+
+.thegranarylogo {
+  width: 20%;
+  height: 20%;
+}
+
+.thegranary-black {
+  background-color: #222427;
+}
+
+.thegranary-yellow {
+  background-color: #FFBB05;
+}
+
+.thegranary-white {
+  background-color: #f8f8f8;
+}
+
+.grid-images {
+  width: 100%;
+  height: 100%;
+}
+
+/** Scroll **/
+
+.horizontal-in {
+  display: flex;
+  width: 100%;
+  min-height: 100px;
+  overflow-x: auto;
+   -webkit-overflow-scrolling:touch;
+}
+
+.horizontal-content {
+  min-width: 100%;
+  text-align: center;
+}
