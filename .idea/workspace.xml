@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="48813025-df4a-464a-b9ff-9724695b95e7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/img/cast.png" afterPath="$PROJECT_DIR$/img/cast.png" />
-      <change beforePath="$PROJECT_DIR$/img/cast_hover.png" afterPath="$PROJECT_DIR$/img/cast_hover.png" />
-      <change beforePath="$PROJECT_DIR$/img/granary.png" afterPath="$PROJECT_DIR$/img/granary.png" />
-      <change beforePath="$PROJECT_DIR$/img/granary_hover.png" afterPath="$PROJECT_DIR$/img/granary_hover.png" />
-      <change beforePath="$PROJECT_DIR$/img/hexacon.png" afterPath="$PROJECT_DIR$/img/hexacon.png" />
-      <change beforePath="$PROJECT_DIR$/img/hexacon_hover.png" afterPath="$PROJECT_DIR$/img/hexacon_hover.png" />
-      <change beforePath="$PROJECT_DIR$/img/other.png" afterPath="$PROJECT_DIR$/img/other.png" />
-      <change beforePath="$PROJECT_DIR$/img/other_hover.png" afterPath="$PROJECT_DIR$/img/other_hover.png" />
-      <change beforePath="$PROJECT_DIR$/img/zero.png" afterPath="$PROJECT_DIR$/img/zero.png" />
-      <change beforePath="$PROJECT_DIR$/img/zero_hover.png" afterPath="$PROJECT_DIR$/img/zero_hover.png" />
+      <change beforePath="$PROJECT_DIR$/android.html" afterPath="$PROJECT_DIR$/android.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -57,21 +47,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_custom.scss" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_custom.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/scss/_custom.scss">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="355">
-              <caret line="154" column="17" lean-forward="true" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
+              <caret line="154" column="17" lean-forward="false" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="android.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="android.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/android.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2115">
-              <caret line="141" column="18" lean-forward="false" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
+            <state relative-caret-position="256">
+              <caret line="163" column="31" lean-forward="true" selection-start-line="163" selection-start-column="31" selection-end-line="163" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -99,6 +89,7 @@
       <find>card</find>
       <find>header</find>
       <find>project-t</find>
+      <find>zero</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,10 +116,10 @@
         <option value="$PROJECT_DIR$/thegranary.html" />
         <option value="$PROJECT_DIR$/scss/_base.scss" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/android.html" />
         <option value="$PROJECT_DIR$/scss/_custom.scss" />
         <option value="$PROJECT_DIR$/other.html" />
         <option value="$PROJECT_DIR$/modules/footer.html" />
+        <option value="$PROJECT_DIR$/android.html" />
       </list>
     </option>
   </component>
@@ -589,14 +580,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2115">
-          <caret line="141" column="18" lean-forward="false" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/footer.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -628,7 +611,15 @@
     <entry file="file://$PROJECT_DIR$/scss/_custom.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="355">
-          <caret line="154" column="17" lean-forward="true" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
+          <caret line="154" column="17" lean-forward="false" selection-start-line="154" selection-start-column="17" selection-end-line="154" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="163" column="31" lean-forward="true" selection-start-line="163" selection-start-column="31" selection-end-line="163" selection-end-column="31" />
           <folding />
         </state>
       </provider>
