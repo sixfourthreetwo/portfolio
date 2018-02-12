@@ -99,7 +99,7 @@ h3 {
   transform: translateY(-4px);
   -webkit-transition: .3s;
   transition: .3s ease-in;
-  box-shadow: 0 9px 13px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 9px 13px 0 rgba(0, 0, 0, 0.08);
 }
 
 .portfolio-card:active {
@@ -276,6 +276,9 @@ a {
   }
   .logo {
     width: 40%;
+  }
+  .buffer-sm {
+     padding: 50px 0;
   }
 }
 
