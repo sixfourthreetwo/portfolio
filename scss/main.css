@@ -879,7 +879,7 @@ a {
 
 .link-highlight:hover:before {
   background: black;
-  transform: scale(1.2, 2.8); }
+  transform: scale(0.3, 2.8); }
 
 .link-highlight:focus {
   outline-color: rgba(0, 0, 0, 0.1);
@@ -908,6 +908,14 @@ a {
 
 .link-highlight.link-highlight-home:hover:before {
   background: #7FE596;
+  transition: all 400ms; }
+
+.link-highlight.link-highlight-sopost:hover:before {
+  background: #0C26C2;
+  transition: all 400ms; }
+
+.link-highlight.link-highlight-curate:hover:before {
+  background: #000000;
   transition: all 400ms; }
 
 @media screen and (max-width: 47.9375em) {

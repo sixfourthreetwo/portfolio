@@ -886,6 +886,7 @@ a {
   outline-width: 1px;
   outline-offset: -1px; }
 
+
 .link-highlight.link-highlight-dribble:hover:before {
   background: #ea4c89;
   transition: all 400ms; }
@@ -909,6 +910,15 @@ a {
 .link-highlight.link-highlight-home:hover:before {
   background: #7FE596;
   transition: all 400ms; }
+
+.link-highlight.link-highlight-sopost:hover:before {
+  background: #0C26C2;
+  transition: all 400ms; }
+
+.link-highlight.link-highlight-curate:hover:before {
+  background: #000000;
+  transition: all 400ms; }
+
 
 @media screen and (max-width: 47.9375em) {
   .header-bg {
